@@ -44,7 +44,7 @@ resource "ansible_host" "host" {
 resource "cloudflare_record" "host" {
   for_each = local.hostnames
 
-  zone_id = var.zone_id
+  zone_id = var.cf_zone_id
   name    = each.key
   value   = each.value
   type    = "A"
