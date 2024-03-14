@@ -3,11 +3,11 @@ terraform {
   required_providers {
     ansible = {
       source  = "nbering/ansible"
-      version = " = 1.0.4"
+      version = "= 1.0.4"
     }
     cloudflare = {
-      source   = "cloudflare/cloudflare"
-      version  = " = 3.26.0"
+      source  = "cloudflare/cloudflare"
+      version = "= 4.26.0"
     }
   }
 }
