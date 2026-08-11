@@ -40,6 +40,12 @@ variable "name" {
   default     = "node"
 }
 
+variable "type" {
+  description = "Type of host for TF and Consul metadata."
+  type        = string
+  default     = "unknown"
+}
+
 variable "group" {
   description = "Name of Ansible group to add hosts to."
   type        = string
